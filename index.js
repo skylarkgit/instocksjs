@@ -2,9 +2,14 @@ var moment = require('moment');
 var http = require('https');
 var fs = require('fs');
 var unzipper = require('unzipper');
+var dir = './data';
 
-var startDate = moment('2020-01-01');
-var endDate = moment('2020-08-01');
+if (!fs.existsSync(dir)){
+    fs.mkdirSync(dir);
+}
+
+var startDate = moment(process.argv[2] || '2020-01-01');
+var endDate = moment(process.argv[3] || '2020-01-02');
 
 const extractData = 'extract';
 
