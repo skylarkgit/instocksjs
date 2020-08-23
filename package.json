@@ -1,0 +1,16 @@
+{
+  "name": "instocksjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "curl": "^0.1.4",
+    "moment": "^2.27.0",
+    "unzipper": "^0.10.11"
+  }
+}
